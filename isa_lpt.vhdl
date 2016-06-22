@@ -37,7 +37,7 @@ begin
                         when "1101111001" =>
                             isa_data_out <= register_status & "000";
                         when others =>
-                            isa_data_out <= (others => 'u');
+                            isa_data_out <= (others => 'U');
                     end case;
                 elsif isa_ior = '1' and isa_iow = '0' then
                     case isa_address is
@@ -51,10 +51,10 @@ begin
                 end if;
             end if;
         else
-            isa_data_out     <= (others => 'u');
-            register_data    <= (others => 'u');
-            register_status  <= (others => 'u');
-            register_control <= (others => 'u');
+            isa_data_out     <= (others => 'U');
+            register_data    <= (others => 'U');
+            register_status  <= (others => 'U');
+            register_control <= (others => 'U');
         end if;
     end process;
 end rtl;
