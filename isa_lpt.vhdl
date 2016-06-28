@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity isa_lpt is port (
-    clock        : in   std_logic;
+    clock        : in  std_logic;
     isa_reset    : in  std_logic;
     isa_address  : in  std_logic_vector(9 downto 0);
     isa_aen      : in  std_logic;
